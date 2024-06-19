@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Saludo Personalizado</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input, button { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Saludo Personalizado</h1>
+    <input type="text" id="nameInput" placeholder="Ingresa tu nombre">
+    <button onclick="showGreeting()">Saludar</button>
+    <p id="greetingText"></p>
+
+    <script>
+        function showGreeting() {
+            var name = document.getElementById('nameInput').value;
+            var greeting = 'Hola, ' + name + '!';
+            document.getElementById('greetingText').textContent = greeting;
+        }
+    </script>
+</body>
+</html>
